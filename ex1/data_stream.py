@@ -156,8 +156,9 @@ class DataStream():
         if len(self.actualproc.keys()):
             for procs in self.actualproc.keys():
                 print(f'Processor {i}: total {self.actualproc[procs]} '
-                    f'items processed, remaining {len(procs.get_storage_l())}'
-                    " on processor")
+                      'items processed, remaining'
+                      f' {len(procs.get_storage_l())}'
+                      ' on processor')
                 i += 1
         else:
             print('No processor found, no data')
